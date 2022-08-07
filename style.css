@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+body {
+    background: url('https://pro-todo.netlify.app/static/media/bg-img.44009639.jpg');
+    color: white;
+    background-repeat: none;
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+/* Form */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input{
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 350px;
+    background: rgb(231, 255, 192);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+form button {
+    color: #afff47;
+    background: #353535;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+form button:hover {
+    background: #ff6f47;
+    color: white;
+}
+
+/* All Buttons */
+
+.All-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.All-buttons button {
+    padding: 10px 30px;
+    margin: 20px 10px;
+    background-image: linear-gradient( #80ff2b, #03c73e);    
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.All-buttons button:hover {
+    background-image: linear-gradient( #03c73e, #80ff2b);    
+
+}
+
+/* To do */
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 40%;
+    list-style: none;
+}
+
+.todo {
+    margin: 10px;
+    background: white;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+    border-radius: 25px;
+}
+
+.filter-todo {
+    padding: 5px;
+}
+
+.todo li {
+    flex: 1;
+    padding: 10px 20px;
+}
+
+.trash-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-right: 5px;
+}
+
+.complete-btn {
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: rgb(11, 212, 162);
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
